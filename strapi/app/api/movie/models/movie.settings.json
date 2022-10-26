@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "name": "Movie",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "release": {
+      "type": "date"
+    },
+    "director": {
+      "model": "director",
+      "via": "movies"
+    }
+  }
+}
